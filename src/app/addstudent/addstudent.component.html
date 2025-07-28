@@ -1,0 +1,10 @@
+<div class="container mt-4">
+  <h3>Add Student</h3>
+  <form (ngSubmit)="addStudent()">
+    <input type="text" [(ngModel)]="student.name" name="name" placeholder="Name" class="form-control mb-2" required>
+    <input type="text" [(ngModel)]="student.class" name="class" placeholder="Class" class="form-control mb-2" required>
+    <input type="text" [(ngModel)]="student.rollNo" name="rollNo" placeholder="Roll No" class="form-control mb-2" required>
+    <input type="text" [(ngModel)]="student.phone" name="phone" placeholder="Phone" class="form-control mb-2" required>
+    <button class="btn btn-success" type="submit">Add</button>
+  </form>
+</div>
