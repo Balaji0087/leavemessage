@@ -43,6 +43,7 @@ this.submitAttempted = true;
   this.http.post('http://localhost:3000/send-sms', payload).subscribe({
     next: (res) => {
       alert('SMS sent successfully!');
+      console.log(res);
       this.remarks = '';
       this.submitAttempted = false;
       this.filteredStudents.forEach(s => s.selected = false);
